@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+      body{
+  font-family: Calibri, Helvetica, sans-serif;
+  background-image: linear-gradient(90deg, #3a8c50, #000501);
+}
+.moeda-cotacao{
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px;
+  padding-bottom: -00px;
+  box-shadow: 2px 12px 15px 1px rgba(0, 0, 0, 20);
+  color: white;
+}
+.moeda{
+  float: left;
+}
+.valor{
+  float: right;
+}
+.btn {
+  background: #557a58;
+  border-radius: 3px;
+  font-size: 17px;
+  color: #ffffff;
+  width: 130px;
+  border-color: #557a58;
+  text-decoration: none;
+  padding: 0px 10px 0px 5px;
+}
+
+.btn:hover {
+  background: #64946b;
+  border-color: #64946b;
+  text-decoration: none;
+}
+  </style>
+    <title>Cotações do Dólar, Euro e Bitcoin</title>
+</head>
+<body>
+  <div class='moeda-cotacao'>
+    <center><h1> Cotações </h1></center>
+    <div class='moeda-valor'>
+      <div class="moeda">
+        <p>Dólar:</p>
+        <p>Euro:</p>
+        <p>Bitcoin:</p>
+       </div>
+      <div class="valor">
+        <p>R$ <%= dolar %></p>
+        <p>R$ <%= euro %></p>
+        <p>R$ <%= bitcoin %></p>
+      </div>
+    </div>
+    <center><a href="http://127.0.0.1:8080/"><button class="btn">Atualizar</button>
+</a> </center>
+    <br>
+  </div>
+</body>
+</html>
